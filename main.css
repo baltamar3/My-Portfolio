@@ -1,0 +1,130 @@
+body{
+    background: #E2E2E2;
+    padding: 0px;
+    margin: 0px;
+}
+
+html,body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Roboto", sans-serif;
+}
+
+hr{
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+    color: #000;
+}
+
+.education h2,.experience h2{
+    color: #757575;
+    font-size: 30px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+h2 i{
+    margin-right: 15px;
+    color: #F3A712;
+
+}
+
+h6 i{
+    margin-right: 15px;
+    color: #F3B700;
+}
+
+p i{
+    margin-right: 15px;
+    color: #F3B700;
+}
+
+.data i{
+    color: #F3B700;
+}
+
+.data,.education,.experience p{
+    color: #757575;
+}
+
+h5{
+    font-size: 18px;
+    color: #757575;
+}
+
+h6{
+    font-size: 16px;
+    color: #F3B700;
+    margin: 0px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 35% auto;
+    grid-template-rows: auto auto;
+    grid-gap: 15px;
+    padding: 15px;
+}
+
+.grid-container .experience,.education{
+    background: #FFFFFF;
+    padding: 20px;
+    -webkit-box-shadow: 1px -3px 15px 2px rgba(168,163,168,1);
+    -moz-box-shadow: 1px -3px 15px 2px rgba(168,163,168,1);
+    box-shadow: 1px -3px 15px 2px rgba(168,163,168,1);
+}
+
+.data{
+    background: #FFFFFF;
+    -webkit-box-shadow: 1px -3px 15px 2px rgba(168,163,168,1);
+    -moz-box-shadow: 1px -3px 15px 2px rgba(168,163,168,1);
+    box-shadow: 1px -3px 15px 2px rgba(168,163,168,1);
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.experience{
+    text-align: justify;
+}
+
+
+
+
+.data div{
+    padding: 15px 20px;
+}
+
+.data div:first-child{
+    padding: 0px;
+    position: relative;
+}
+
+.footer{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background: #F3B700;
+    padding: 15px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+#name{
+    padding: 0px;
+    margin: 0px 20px;
+    position: absolute;
+    left: 0px;
+    top:90%;
+    color: #F3A712;
+}
+
+
+@media only screen and (max-width: 590px) {
+    .data{grid-area: 1 / 1 /auto /3}
+    .experience{grid-area: 2/ 1/ auto/ 3}
+    .education{grid-area: 3/ 1/auto/3}
+  }
+
