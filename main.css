@@ -31,6 +31,7 @@ h2 i{
 h6 i{
     margin-right: 15px;
     color: #F3B700;
+    
 }
 
 p i{
@@ -119,12 +120,23 @@ img{
     left: 0px;
     top:90%;
     color: #F3A712;
+    font-size: 24px;
 }
 
 
-@media only screen and (max-width: 590px) {
+@media only screen and (max-width: 727px) {
     .data{grid-area: 1 / 1 /auto /3}
     .experience{grid-area: 2/ 1/ auto/ 3}
     .education{grid-area: 3/ 1/auto/3}
   }
 
+  @media only screen and (min-width: 1000px) {
+    html,body,h1,h2,h3,h4,h5,h6 {
+        font-family: "Roboto", sans-serif;
+        font-size: 20px;
+    }
+    #name{
+        font-size: 30px;
+    }
+
+  }
